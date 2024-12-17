@@ -26,6 +26,7 @@ def create_settings_dialog(page: ft.Page, auth_manager, on_save_callback):
         label="пароль",
         value=auth_manager.password,
         password=True,
+        can_reveal_password=True,
         border_color=ft.colors.GREY_300,
         focused_border_color=ft.colors.BLUE_400,
         width=300,
